@@ -274,10 +274,7 @@ export default {
     }
   },
   render (h) {
-    const inputNode = this.$slots.default || [this.renderInput(h)]
-    return h('div', {
-      class: 'v-google-places'
-    }, inputNode)
+    return this.$slots.default || this.renderInput(h)
   },
   beforeDestroy () {
     if (this.enterPressListener) {
