@@ -141,6 +141,7 @@ export default {
       })
 
       this.element.addEventListener('focus', () => {
+        this.element.setAttribute('autocomplete', 'no-fill')
         this.hasDownBeenPressed = false
       })
     },
